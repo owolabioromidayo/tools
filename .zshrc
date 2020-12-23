@@ -118,8 +118,11 @@ alias todo="cat ~/todo.md"
 alias journal-entry="python3 ~/tools/typing.py"
 alias timer="python3 ~/tools/timer.py"
 alias vlc="/mnt/c/\"Program Files (x86)\"/VideoLAN/VLC/vlc.exe"
-alias _open="explorer.exe ."
+alias _open="explorer.exe"
 alias cpdf=" ~/tools/cpdf"
+alias commands="vim ~/other/notes/commands"
+alias coursera-dl="~/.local/bin/coursera-dl"
+export PATH=/home/oromidayo/.local/mongodb-shell/bin:$PATH
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
