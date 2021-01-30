@@ -1,0 +1,97 @@
+GIT MAKE GLOBAL
+	git config --global credential.helper store
+
+
+GET SERIAL NUMBER
+	wmic bios get serialnumber
+
+
+CHECK TIME COMMAND EXEC
+	history -E
+
+
+Kill process on port -> sudo kill -9 $(sudo lsof -t -i:PORT)
+
+
+CURL
+	must use sudo
+
+	sudo curl site > output.txt -> GET
+	sudo curl --data "Data" site -> POST
+
+comment in vim
+	ctrl V -> visual line
+	move down
+	shift I -> insert in first line
+	press Esc
+
+uncomment
+	visual line select, press X
+
+
+du -sh -> file size in human readable format
+sudo -i -> interactive
+vim file -b -> binary mode
+: w | gcc main.c && ./a.out
+ 
+bcdedit /set hypervisorlaunchtype off
+
+jupyter notebook ->  sudo ~/.local/bin/jupyter-lab --allow-root / or notebook
+	 apt list --installed | grep package-name
+	'#!/usr/bin/env python3'
+	ctrl+k -> delete from cursor to end of line
+	ctrl+u -> delete from cursor to start of line
+	ctrl+w -> delete from cursor to start of word
+	python -c "command"
+	tasklist.exe -> view all processes
+	ctrl l clear terminal
+	
+	cat < f1, copys f1 into cat, prints to terminal by default
+	cat < f1 > f2, copys f1 to f2
+	PIPING
+	python -c "print(2)" | python -c "print(input(), "x")" -> returns (2,x)
+	
+	piping passes the output of cmd_1 to cmd_2 as stdin
+	
+	
+	SEARCHING
+		find dirname -name "filename"
+		find dirname filename
+		-type f/d -> file or dir
+		
+		
+f12 , ctrl shift m -> mobile site
+
+
+C/C++
+include math -> gcc file.c -lm
+C++ -> g++  -std=c++11 filename.cpp && ./a.out
+	
+	
+
+TMUX
+	new  - ctrlb  c
+	new win in dir- tmux neww
+	close tab - ctrl+b+x then y
+	switch ctrlb idx OR ctrlb p, n
+	
+	
+PYTHON
+	os.getcwd()   os.chdir()   os.mkdir()   os.system(command) os.listdir(path)
+	
+	os.path.abspath(".")
+	os.path.join(path1, path2)
+
+	python -i filename.py #Runs shell after program to inspect variables and use functions
+	python file -I input_file -o output_file
+	reverse-  x[::-1]
+	 list(str)   ''".join(list)
+	dictionaries can use tuples as keys
+	x.sort()  y = sorted(x)  reverse=True, key=abs (absolute)
+	
+	make file global - > Python3x/Lib/site-packages/
+
+	isinstance(object, class)
+	words.split(delimiter)
+	
+functools.reduce(lambda a,b:a+b, [1,2,3,4]) => 10
