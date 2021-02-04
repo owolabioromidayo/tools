@@ -1,3 +1,9 @@
+DELETE ALL SWAP FILES
+	find . "*.sw" -delete
+
+OPEN
+	_open path\\to\\folder
+
 GIT MAKE GLOBAL
 	git config --global credential.helper store
 
@@ -9,15 +15,12 @@ GET SERIAL NUMBER
 CHECK TIME COMMAND EXEC
 	history -E
 
-
 Kill process on port -> sudo kill -9 $(sudo lsof -t -i:PORT)
 
-
 CURL
-	must use sudo
 
-	sudo curl site > output.txt -> GET
-	sudo curl --data "Data" site -> POST
+	 curl site > output.txt -> GET
+	curl --data "Data" site -> POST
 
 comment in vim
 	ctrl V -> visual line
