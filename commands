@@ -1,3 +1,9 @@
+SLEEP
+	sleep 5s
+
+HOTSPOT FROM TERMINAL
+	netsh wlan set hostednetwork mode=allow ssid=Name key=password
+	netsh wlan start hostednetwork
 DELETE ALL SWAP FILES
 	find . "*.sw" -delete
 
