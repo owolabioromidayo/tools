@@ -1,3 +1,9 @@
+SIMPLE ARITHMETIC BASH
+	echo $((expr))
+
+FORMAT PESKY PYTHON
+	pip install autopep8
+	autopep8 -i pesky.py
 SLEEP
 	sleep 5s
 
