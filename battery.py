@@ -2,7 +2,7 @@ import os,sys
 
 def main(arg):
         arg = int(arg)
-        ids = ['48684d4a-8524-4093-8a63-ea7132b79c1c', 'c006d24e-fb7b-4bae-a2f7-80bd94a22f4d']
+        ids = ['381b4222-f694-41f0-9685-ff5bb260df2e', '92c14ebc-c2e6-4871-bcf2-02db52777fac']
         command = 'powershell.exe powercfg /s ' + ids[arg]
         os.system(command)
 

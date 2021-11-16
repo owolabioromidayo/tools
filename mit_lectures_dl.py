@@ -1,8 +1,7 @@
 import os, sys
 n = 1
-style = sys.argv[2]
+style = 0
 prepend = "https://ocw.mit.edu/resources/res-6-007-signals-and-systems-spring-2011/lecture-notes/MITRES_6_007S11_lec"
-prepend = sys.argv[1]
 append = ".pdf"
 
 while True:
